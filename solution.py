@@ -25,8 +25,12 @@ def solution(ratings)-> int:
 
     return ans
 
+n = int(input("Enter the size of list: "))
+ratings = []
 
-ratings = list(input("Enter the ratings: ").split(','))
+for i in range(0,n):
+    num = int(input("Enter the rating: "))
+    ratings.append(num)
 
 ans = solution(ratings)
 
